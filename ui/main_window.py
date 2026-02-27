@@ -5,18 +5,15 @@ from ui.incidencias_frame import IncidenciasFrame
 from ui.estadisticas_frame import EstadisticasFrame
 from ui.auditoria_frame import AuditoriaFrame
 
-
 # aqui construyo la ventana principal de la aplicacion
-
 
 class VentanaPrincipal(ctk.CTk):
 
     def __init__(self):
         super().__init__()
 
-        # leo el tema de la configuracion y lo aplico
-        tema = config.obtener("tema", "dark")
-        ctk.set_appearance_mode(tema)
+        # Forzado a tema oscuro permanentemente sin depender de config.json
+        ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme(config.obtener("color_principal", "blue"))
 
         self.title("Gestion de Activos Informaticos e Incidencias")
@@ -74,21 +71,8 @@ class VentanaPrincipal(ctk.CTk):
         )
         self._btn_auditoria.pack(pady=3, padx=10)
 
-        # cambiador de tema en la parte baja del menu
-        ctk.CTkFrame(self._sidebar, height=1, fg_color="gray40").pack(fill="x", padx=10, side="bottom", pady=5)
-
-        frame_tema = ctk.CTkFrame(self._sidebar, fg_color="transparent")
-        frame_tema.pack(side="bottom", pady=10, padx=10)
-
-        ctk.CTkLabel(frame_tema, text="Modo:", font=ctk.CTkFont(size=11)).pack()
-        self._switch_tema = ctk.CTkSwitch(frame_tema, text="Oscuro",
-                                          command=self._cambiar_tema, width=60)
-        if ctk.get_appearance_mode() == "Dark":
-            self._switch_tema.select()
-        self._switch_tema.pack(pady=3)
-
-        ctk.CTkLabel(self._sidebar, text="v1.0",
-                     font=ctk.CTkFont(size=10), text_color="gray").pack(side="bottom", pady=2)
+        # Se ha eliminado el cambiador de tema y la etiqueta de version
+        # para limpiar la interfaz y cumplir con lo solicitado.
 
         # area de contenido principal
         self._contenido = ctk.CTkFrame(self, corner_radius=0, fg_color="transparent")
@@ -125,12 +109,3 @@ class VentanaPrincipal(ctk.CTk):
             self._frame_actual = AuditoriaFrame(self._contenido)
 
         self._frame_actual.pack(fill="both", expand=True)
-
-    def _cambiar_tema(self):
-        # aqui cambio entre modo claro y oscuro
-        if self._switch_tema.get():
-            ctk.set_appearance_mode("dark")
-            self._switch_tema.configure(text="Oscuro")
-        else:
-            ctk.set_appearance_mode("light")
-            self._switch_tema.configure(text="Claro")
