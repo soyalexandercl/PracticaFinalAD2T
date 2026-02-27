@@ -1,0 +1,50 @@
+id,codigo,tipo,marca,modelo,numero_serie,ubicacion,fecha_alta,estado
+2,ACT-0002,Monitor,HP,EliteDisplay E243,SN-HP-2002,Oficina Principal,2023-01-15,Activo
+3,ACT-0003,Ordenador,Lenovo,ThinkCentre M70,SN-LN-3003,Sistemas,2023-02-10,En reparacion
+4,ACT-0004,Impresora,Brother,MFC-L2710DW,SN-BR-4004,Recepcion,2023-03-05,Activo
+5,ACT-0005,Servidor,Dell,PowerEdge R740,SN-DL-5005,Sala Servidores,2022-11-20,Activo
+6,ACT-0006,Router,Cisco,ISR 4331,SN-CS-6006,Sala Servidores,2022-11-22,Activo
+7,ACT-0007,Switch,Cisco,Catalyst 9200,SN-CS-7007,Planta 1 - Rack A,2022-12-01,Activo
+8,ACT-0008,Tablet,Samsung,Galaxy Tab S7,SN-SM-8008,Comercial,2023-04-12,Activo
+9,ACT-0009,Portatil,Apple,MacBook Pro 14,SN-AP-9009,Diseño,2023-05-18,Activo
+10,ACT-0010,Monitor,Dell,UltraSharp U2720Q,SN-DL-1010,Diseño,2023-05-18,Activo
+11,ACT-0011,Portatil,Lenovo,ThinkPad X1,SN-LN-1111,Gerencia,2023-01-20,Activo
+12,ACT-0012,Impresora,HP,LaserJet Pro,SN-HP-1212,Sistemas,2023-06-02,Almacenado
+13,ACT-0013,Ordenador,Asus,ExpertCenter,SN-AS-1313,Atencion Cliente,2023-02-25,Activo
+14,ACT-0014,Portatil,Acer,Swift 3,SN-AC-1414,Recursos Humanos,2023-03-10,Baja
+15,ACT-0015,Monitor,Samsung,Odyssey G5,SN-SM-1515,Sistemas,2023-07-01,Activo
+16,ACT-0016,Servidor,HP,ProLiant DL380,SN-HP-1616,Sala Servidores,2022-10-15,Activo
+17,ACT-0017,Tablet,Apple,iPad Air 5,SN-AP-1717,Marketing,2023-08-05,Activo
+18,ACT-0018,Switch,Ubiquiti,UniFi PoE,SN-UB-1818,Planta 2 - Rack B,2022-09-30,Activo
+19,ACT-0019,Router,MikroTik,Cloud Core,SN-MK-1919,Sistemas,2022-11-05,En reparacion
+20,ACT-0020,Portatil,MSI,Prestige 14,SN-MS-2020,Desarrollo,2023-02-14,Activo
+21,ACT-0021,Monitor,LG,27UL500,SN-LG-2121,Desarrollo,2023-02-14,Activo
+22,ACT-0022,Ordenador,Dell,OptiPlex 7080,SN-DL-2222,Contabilidad,2023-01-30,Activo
+23,ACT-0023,Impresora,Epson,EcoTank,SN-EP-2323,Contabilidad,2023-01-30,Activo
+24,ACT-0024,Portatil,Microsoft,Surface Laptop 4,SN-MS-2424,Ventas,2023-04-22,Activo
+25,ACT-0025,Otro,APC,Smart-UPS 1500,SN-AP-2525,Sala Servidores,2022-08-10,Activo
+26,ACT-0026,Portatil,HP,ProBook 450,SN-HP-2626,Almacen,2023-05-05,Almacenado
+27,ACT-0027,Monitor,BenQ,PD2700U,SN-BQ-2727,Marketing,2023-05-12,Activo
+28,ACT-0028,Ordenador,Lenovo,IdeaCentre,SN-LN-2828,Recepcion,2023-03-20,Activo
+29,ACT-0029,Tablet,Lenovo,Tab P11,SN-LN-2929,Logistica,2023-06-15,Activo
+30,ACT-0030,Servidor,Supermicro,Sys-1029,SN-SM-3030,Sala Servidores,2022-12-20,Activo
+31,ACT-0031,Switch,Netgear,Smart Managed,SN-NG-3131,Planta 1 - Rack A,2023-01-05,Activo
+32,ACT-0032,Portatil,Dell,Vostro 3510,SN-DL-3232,Administracion,2023-02-28,Activo
+33,ACT-0033,Monitor,Philips,243V7,SN-PH-3333,Administracion,2023-02-28,Activo
+34,ACT-0034,Impresora,Canon,imageRUNNER,SN-CN-3434,Pasillo Central,2022-07-14,Activo
+35,ACT-0035,Ordenador,HP,Pavilion TP01,SN-HP-3535,Sistemas,2023-04-10,Baja
+36,ACT-0036,Portatil,Asus,ZenBook 13,SN-AS-3636,Direccion,2023-01-12,Activo
+37,ACT-0037,Monitor,Dell,P2419H,SN-DL-3737,Direccion,2023-01-12,Activo
+38,ACT-0038,Tablet,Samsung,Galaxy Tab A8,SN-SM-3838,Almacen,2023-05-20,Activo
+39,ACT-0039,Router,TP-Link,Archer C6,SN-TP-3939,Cafeteria,2023-03-01,Activo
+40,ACT-0040,Portatil,Apple,MacBook Air M2,SN-AP-4040,Diseño,2023-09-01,Activo
+41,ACT-0041,Monitor,ViewSonic,VP2785,SN-VS-4141,Diseño,2023-09-01,Activo
+42,ACT-0042,Ordenador,Dell,Precision 3650,SN-DL-4242,I+D,2023-06-10,Activo
+43,ACT-0043,Servidor,Dell,PowerEdge T150,SN-DL-4343,Sistemas,2023-01-25,Almacenado
+44,ACT-0044,Switch,Cisco,CBS250,SN-CS-4444,Planta 2 - Rack B,2023-02-15,Activo
+45,ACT-0045,Impresora,Lexmark,MB2236,SN-LX-4545,Planta 2,2023-03-22,Activo
+46,ACT-0046,Portatil,Lenovo,Legion 5,SN-LN-4646,Desarrollo,2023-04-18,En reparacion
+47,ACT-0047,Monitor,AOC,24G2,SN-AO-4747,Desarrollo,2023-04-18,Activo
+48,ACT-0048,Tablet,Microsoft,Surface Go 3,SN-MS-4848,Ventas,2023-07-12,Activo
+49,ACT-0049,Ordenador,Acer,Veriton,SN-AC-4949,Atencion Cliente,2023-02-05,Activo
+50,ACT-0050,Portatil,HP,EliteBook 840,SN-HP-5050,Sistemas,2023-01-10,Activo

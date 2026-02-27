@@ -3,9 +3,7 @@ import os
 from utils import config
 from utils import logger
 
-
 # aqui gestiono la conexion con la base de datos SQLite
-
 
 def obtener_conexion():
     # obtengo la ruta de la base de datos desde la configuracion

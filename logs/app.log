@@ -10,3 +10,17 @@
 2026-02-28 00:33:57 [INFO] Iniciando la aplicacion de gestion de activos
 2026-02-28 00:33:57 [INFO] Base de datos inicializada correctamente
 2026-02-28 00:34:17 [INFO] Aplicacion cerrada
+2026-02-28 00:36:20 [INFO] Iniciando la aplicacion de gestion de activos
+2026-02-28 00:36:20 [INFO] Base de datos inicializada correctamente
+2026-02-28 00:36:37 [INFO] Aplicacion cerrada
+2026-02-28 00:38:59 [INFO] Iniciando la aplicacion de gestion de activos
+2026-02-28 00:38:59 [INFO] Base de datos inicializada correctamente
+2026-02-28 00:39:22 [INFO] Importacion CSV completada: 50 activos importados
+2026-02-28 00:39:44 [INFO] Activo eliminado: ACT-0001
+2026-02-28 00:41:15 [INFO] Incidencia creada: id=1 para activo 3
+2026-02-28 00:41:59 [INFO] Aplicacion cerrada
+2026-02-28 00:43:54 [INFO] Iniciando la aplicacion de gestion de activos
+2026-02-28 00:43:54 [INFO] Base de datos inicializada correctamente
+2026-02-28 00:44:21 [INFO] Incidencias exportadas a JSON: incidencias_20260228_004421.json (1 registros)
+2026-02-28 00:44:30 [INFO] Activos exportados a CSV: activos_20260228_004430.csv (49 registros)
+2026-02-28 00:45:03 [INFO] Aplicacion cerrada

@@ -283,7 +283,7 @@ class FormularioActivo(ctk.CTkToplevel):
         self._campo_ubicacion.grid(row=6, column=1, padx=(0, 20), pady=6, sticky="w")
 
         ctk.CTkLabel(self, text="Fecha de alta (AAAA-MM-DD):").grid(row=7, column=0, padx=(20, 5), pady=6, sticky="w")
-        self._campo_fecha = ctk.CTkEntry(self, width=200, placeholder_text="2024-01-15")
+        self._campo_fecha = ctk.CTkEntry(self, width=200, placeholder_text="2026-02-28")
         self._campo_fecha.grid(row=7, column=1, padx=(0, 20), pady=6, sticky="w")
 
         ctk.CTkLabel(self, text="Estado:").grid(row=8, column=0, padx=(20, 5), pady=6, sticky="w")

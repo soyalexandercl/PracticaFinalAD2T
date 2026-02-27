@@ -57,11 +57,11 @@ class IncidenciasFrame(ctk.CTkFrame):
         self._filtro_activo.grid(row=1, column=7, padx=(0, 8), pady=5)
 
         ctk.CTkLabel(frame_filtros, text="Desde:").grid(row=2, column=0, padx=(10, 3), pady=5, sticky="w")
-        self._filtro_fecha_desde = ctk.CTkEntry(frame_filtros, width=110, placeholder_text="2024-01-01")
+        self._filtro_fecha_desde = ctk.CTkEntry(frame_filtros, width=110, placeholder_text="2026-02-28")
         self._filtro_fecha_desde.grid(row=2, column=1, padx=(0, 8), pady=5)
 
         ctk.CTkLabel(frame_filtros, text="Hasta:").grid(row=2, column=2, padx=(0, 3), pady=5, sticky="w")
-        self._filtro_fecha_hasta = ctk.CTkEntry(frame_filtros, width=110, placeholder_text="2024-12-31")
+        self._filtro_fecha_hasta = ctk.CTkEntry(frame_filtros, width=110, placeholder_text="2026-02-28")
         self._filtro_fecha_hasta.grid(row=2, column=3, padx=(0, 8), pady=5)
 
         ctk.CTkButton(frame_filtros, text="Buscar", command=self._buscar, width=90).grid(
@@ -242,7 +242,7 @@ class FormularioIncidencia(ctk.CTkToplevel):
         self._campo_activo.grid(row=1, column=1, padx=(0, 20), pady=6, sticky="w")
 
         ctk.CTkLabel(self, text="Fecha de apertura:").grid(row=2, column=0, padx=(20, 5), pady=6, sticky="w")
-        self._campo_fecha_apertura = ctk.CTkEntry(self, width=200, placeholder_text="2024-01-15")
+        self._campo_fecha_apertura = ctk.CTkEntry(self, width=200, placeholder_text="2026-02-28")
         self._campo_fecha_apertura.grid(row=2, column=1, padx=(0, 20), pady=6, sticky="w")
 
         ctk.CTkLabel(self, text="Prioridad:").grid(row=3, column=0, padx=(20, 5), pady=6, sticky="w")
@@ -262,7 +262,7 @@ class FormularioIncidencia(ctk.CTkToplevel):
         self._campo_tecnico.grid(row=6, column=1, padx=(0, 20), pady=6, sticky="w")
 
         ctk.CTkLabel(self, text="Fecha de cierre:").grid(row=7, column=0, padx=(20, 5), pady=6, sticky="w")
-        self._campo_fecha_cierre = ctk.CTkEntry(self, width=200, placeholder_text="Opcional: 2024-12-01")
+        self._campo_fecha_cierre = ctk.CTkEntry(self, width=200, placeholder_text="Opcional: 2026-02-28")
         self._campo_fecha_cierre.grid(row=7, column=1, padx=(0, 20), pady=6, sticky="w")
 
         ctk.CTkLabel(self, text="Descripcion:").grid(row=8, column=0, padx=(20, 5), pady=6, sticky="nw")
@@ -360,7 +360,7 @@ class CambiarEstadoDialog(ctk.CTkToplevel):
         self._nuevo_estado.pack(pady=5)
 
         ctk.CTkLabel(self, text="Fecha de cierre (si aplica):").pack(pady=(10, 2))
-        self._fecha_cierre = ctk.CTkEntry(self, width=200, placeholder_text="2024-12-01")
+        self._fecha_cierre = ctk.CTkEntry(self, width=200, placeholder_text="2026-02-28")
         self._fecha_cierre.pack(pady=5)
 
         frame_btn = ctk.CTkFrame(self, fg_color="transparent")

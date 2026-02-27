@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "activo_id": 3,
+    "fecha_apertura": "2026-02-28",
+    "prioridad": "Baja",
+    "categoria": "Hardware",
+    "descripcion": "La pantalla no enciende",
+    "estado": "Abierta",
+    "tecnico": "Jhon",
+    "fecha_cierre": null
+  }
+]
