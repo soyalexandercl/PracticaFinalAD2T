@@ -1,119 +1,44 @@
-# Gestion de Activos Informaticos e Incidencias
+# SISTEMA DE GESTIÓN DE ACTIVOS INFORMÁTICOS E INCIDENCIAS
 
-Aplicacion de escritorio desarrollada en Python con SQLite y customtkinter para la gestion de activos informaticos y sus incidencias asociadas.
+Este proyecto es una aplicación de escritorio profesional diseñada para el inventariado y control técnico de activos IT. La herramienta ofrece una interfaz gráfica moderna optimizada en modo oscuro permanente, facilitando la gestión de hardware y el seguimiento de incidencias técnicas en una organización.
 
-## Requisitos
+## CARACTERÍSTICAS PRINCIPALES
 
-- Python 3.9 o superior
-- customtkinter
+* Gestión de Activos: Permite el registro completo de dispositivos como ordenadores, monitores, servidores y periféricos, incluyendo marca, modelo, número de serie y ubicación.
+* Control de Incidencias: Sistema para reportar y gestionar fallos técnicos vinculados a activos específicos, permitiendo definir prioridades, categorías y técnicos asignados.
+* Auditoría de Sistema: Módulo que registra de forma automática todas las acciones de inserción, edición y borrado para asegurar la trazabilidad de los datos.
+* Dashboard de Estadísticas: Visualización de métricas sobre el estado actual del inventario y la distribución de los activos por tipo.
+* Importación e Importación: Herramientas para la exportación de informes en formatos CSV y JSON, además de carga masiva de datos desde archivos CSV.
 
-### Instalar dependencias
+## TECNOLOGÍAS UTILIZADAS
 
-```bash
-pip install customtkinter
-```
+* Python 3.10+: Lenguaje de programación principal.
+* CustomTkinter: Biblioteca para la interfaz gráfica moderna.
+* SQLite: Motor de base de datos para almacenamiento local persistente.
+* Pillow (PIL): Gestión de imágenes en la interfaz.
 
-## Como ejecutar
+## ESTRUCTURA DEL PROYECTO
 
-```bash
-python main.py
-```
+* datos/: Almacenamiento de la base de datos (.db) y archivos de prueba.
+* db/: Lógica de conexión y configuración de la base de datos.
+* exports/: Directorio donde se guardan los archivos CSV y JSON generados.
+* logs/: Registro persistente de eventos y errores del sistema (app.log).
+* models/: Definición de las clases de datos (Activo, Incidencia, Auditoria).
+* repositories/: Capa de acceso a datos y consultas SQL.
+* services/: Lógica de negocio y procesamiento masivo de datos.
+* ui/: Componentes de la interfaz de usuario y frames de navegación.
+* utils/: Utilidades para validación, configuración y sistema de logs.
+* main.py: Punto de entrada principal de la aplicación.
 
-## Estructura del proyecto
+## INSTALACIÓN Y EJECUCIÓN
 
-```
-practica_acceso_datos/
-|
-+-- ui/                     Pantallas e interfaz de usuario
-|   +-- main_window.py      Ventana principal con menu lateral
-|   +-- activos_frame.py    Pantalla de gestion de activos
-|   +-- incidencias_frame.py  Pantalla de gestion de incidencias
-|   +-- estadisticas_frame.py  Pantalla de estadisticas
-|   +-- auditoria_frame.py  Pantalla de historial de cambios
-|   +-- componentes.py      Componentes reutilizables
-|
-+-- db/
-|   +-- database.py         Conexion y creacion de tablas SQLite
-|
-+-- models/
-|   +-- activo.py           Estructura de datos del activo
-|   +-- incidencia.py       Estructura de datos de la incidencia
-|   +-- auditoria.py        Estructura del registro de auditoria
-|
-+-- repositories/
-|   +-- activo_repository.py      Consultas SQL de activos
-|   +-- incidencia_repository.py  Consultas SQL de incidencias
-|   +-- auditoria_repository.py   Consultas SQL de auditoria
-|
-+-- services/
-|   +-- activo_service.py     Logica de negocio de activos
-|   +-- incidencia_service.py  Logica de negocio de incidencias
-|   +-- export_service.py     Exportacion e importacion de datos
-|
-+-- utils/
-|   +-- config.py        Lee el archivo config.json
-|   +-- logger.py        Configuracion del sistema de logs
-|   +-- validaciones.py  Funciones de validacion
-|
-+-- exports/             Archivos exportados (CSV y JSON)
-+-- logs/                Archivo app.log con registro de acciones
-+-- datos/               Base de datos SQLite (se crea al iniciar)
-+-- config.json          Configuracion de la aplicacion
-+-- main.py              Punto de entrada
-+-- README.md            Este archivo
-```
+1. Requisitos previos:
+   * Instalación de Python 3.10 o superior.
+   * Instalación de dependencias: pip install customtkinter Pillow
 
-## Funcionalidades
+2. Inicio de la aplicación:
+   Ejecutar desde la terminal en la raíz del proyecto: python main.py
 
-### Activos
-- Dar de alta nuevos activos con codigo en formato ACT-XXXX
-- Modificar activos existentes
-- Eliminar activos (solo si no tienen incidencias asociadas)
-- Buscar y filtrar por codigo, tipo, marca, estado y ubicacion
-- Paginacion configurable
-- Exportar a CSV
-- Importar desde CSV
-
-### Incidencias
-- Crear incidencias asociadas a un activo
-- Modificar incidencias
-- Cambiar estado rapidamente
-- Eliminar incidencias
-- Filtros combinados: estado, prioridad, tecnico, activo, rango de fechas
-- Exportar a JSON
-
-### Estadisticas
-- Total de activos e incidencias
-- Activos por estado y tipo
-- Incidencias por estado, prioridad y categoria
-- Activos con mas incidencias
-
-### Historial de cambios
-- Registro automatico de todas las inserciones, modificaciones y eliminaciones
-- Visualizacion de los ultimos 100 cambios
-
-## Configuracion (config.json)
-
-```json
-{
-    "db_path": "datos/gestion_activos.db",
-    "registros_por_pagina": 15,
-    "nivel_log": "INFO",
-    "tema": "dark",
-    "color_principal": "blue"
-}
-```
-
-- `db_path`: ruta relativa a la base de datos SQLite
-- `registros_por_pagina`: cuantos registros se muestran en cada pagina
-- `nivel_log`: nivel de detalle del log (DEBUG, INFO, WARNING, ERROR)
-- `tema`: modo de color de la interfaz (dark / light)
-- `color_principal`: color del tema (blue, green, dark-blue)
-
-## Formato del CSV de importacion
-
-El archivo CSV para importar activos debe tener estas columnas:
-
-```
-codigo,tipo,marca,modelo,numero_serie,ubicacion,fecha_alta,estado
-```
+## FORMATO DE IMPORTACIÓN MASIVA
+Para importar activos desde un archivo externo, el CSV debe incluir exactamente los siguientes encabezados:
+codigo, tipo, marca, modelo, numero_serie, ubicacion, fecha_alta, estado.
