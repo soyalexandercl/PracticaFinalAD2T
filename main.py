@@ -9,9 +9,7 @@ from utils import logger
 from db.database import inicializar_base_de_datos
 from ui.main_window import VentanaPrincipal
 
-
 # aqui arranco la aplicacion
-
 
 def main():
     # primero cargo la configuracion externa

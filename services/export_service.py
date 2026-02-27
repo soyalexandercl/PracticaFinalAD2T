@@ -6,9 +6,7 @@ from repositories import activo_repository, incidencia_repository
 from models.activo import Activo
 from utils import logger, validaciones
 
-
 # aqui gestiono la exportacion e importacion de datos
-
 
 def _ruta_exports():
     # devuelvo la ruta de la carpeta exports

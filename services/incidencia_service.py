@@ -3,9 +3,7 @@ from repositories import incidencia_repository, auditoria_repository
 from utils import validaciones, logger
 from utils import config
 
-
 # aqui esta toda la logica de negocio para las incidencias
-
 
 def crear_incidencia(datos):
     # aqui valido y creo una incidencia nueva

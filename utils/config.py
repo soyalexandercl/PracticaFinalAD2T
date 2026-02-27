@@ -4,7 +4,6 @@ import os
 # aqui cargo la configuracion desde el archivo config.json
 _config = {}
 
-
 def cargar_configuracion():
     ruta = os.path.join(os.path.dirname(os.path.dirname(__file__)), "config.json")
     try:

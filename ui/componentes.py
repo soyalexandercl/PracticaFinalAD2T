@@ -1,10 +1,7 @@
 import customtkinter as ctk
-import tkinter as tk
 from tkinter import ttk
 
-
 # aqui tengo componentes reutilizables para no repetir codigo en la interfaz
-
 
 def crear_tabla(parent, columnas, anchos):
     # aqui creo una tabla visual con tkinter Treeview dentro de un frame customtkinter

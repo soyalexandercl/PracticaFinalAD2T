@@ -3,9 +3,7 @@ from repositories import activo_repository, auditoria_repository
 from utils import validaciones, logger
 from utils import config
 
-
 # aqui esta toda la logica de negocio para los activos
-
 
 def crear_activo(datos):
     # aqui valido y creo un activo nuevo

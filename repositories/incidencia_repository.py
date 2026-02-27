@@ -1,9 +1,7 @@
 from db.database import obtener_conexion
 from models.incidencia import Incidencia
 
-
 # aqui hago todas las consultas a la base de datos para las incidencias
-
 
 def insertar(incidencia):
     # aqui guardo una incidencia nueva en la base de datos

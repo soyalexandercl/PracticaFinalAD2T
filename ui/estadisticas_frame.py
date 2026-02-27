@@ -1,9 +1,7 @@
 import customtkinter as ctk
 from services import activo_service, incidencia_service
 
-
 # aqui esta la pantalla de estadisticas e informes
-
 
 class EstadisticasFrame(ctk.CTkFrame):
 

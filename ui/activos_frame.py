@@ -1,12 +1,9 @@
 import customtkinter as ctk
-import tkinter as tk
-from tkinter import ttk, filedialog
+from tkinter import filedialog
 from services import activo_service, export_service
 from ui.componentes import crear_tabla, mostrar_mensaje_error, mostrar_mensaje_ok, pedir_confirmacion
 
-
 # aqui esta la pantalla de gestion de activos
-
 
 TIPOS = ["Ordenador", "Portatil", "Monitor", "Impresora", "Servidor", "Router", "Switch", "Tablet", "Otro"]
 ESTADOS = ["Activo", "En reparacion", "Baja", "Almacenado"]

@@ -1,9 +1,7 @@
 from db.database import obtener_conexion
 from models.auditoria import Auditoria
 
-
 # aqui guardo y consulto los registros de auditoria
-
 
 def registrar(operacion, tabla, registro_id, descripcion):
     # aqui guardo un nuevo registro de auditoria con la fecha y hora actual

@@ -1,11 +1,8 @@
 import customtkinter as ctk
-from tkinter import ttk
 from services import incidencia_service, activo_service, export_service
 from ui.componentes import crear_tabla, mostrar_mensaje_error, mostrar_mensaje_ok, pedir_confirmacion
 
-
 # aqui esta la pantalla de gestion de incidencias
-
 
 PRIORIDADES = ["Baja", "Media", "Alta", "Critica"]
 ESTADOS_INC = ["Abierta", "En progreso", "Pendiente", "Resuelta", "Cerrada"]

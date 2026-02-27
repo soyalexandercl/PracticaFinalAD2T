@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from typing import Optional
 
-
 # aqui defino la estructura del registro de auditoria
 @dataclass
 class Auditoria:

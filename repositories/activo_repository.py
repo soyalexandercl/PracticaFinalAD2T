@@ -1,9 +1,7 @@
 from db.database import obtener_conexion
 from models.activo import Activo
 
-
 # aqui hago todas las consultas a la base de datos para los activos
-
 
 def insertar(activo):
     # aqui guardo un activo nuevo en la base de datos

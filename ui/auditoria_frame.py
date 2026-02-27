@@ -1,11 +1,8 @@
 import customtkinter as ctk
-from tkinter import ttk
 from repositories import auditoria_repository
 from ui.componentes import crear_tabla
 
-
 # aqui esta la pantalla del historial de auditoria
-
 
 class AuditoriaFrame(ctk.CTkFrame):
 

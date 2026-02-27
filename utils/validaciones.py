@@ -3,7 +3,6 @@ from datetime import datetime
 
 # aqui tengo todas las funciones de validacion que uso en la aplicacion
 
-
 def validar_codigo_activo(codigo):
     # el codigo debe seguir el patron ACT-XXXX donde X son digitos
     patron = r'^ACT-\d{4}$'

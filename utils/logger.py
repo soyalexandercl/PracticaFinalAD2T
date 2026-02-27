@@ -5,7 +5,6 @@ from utils import config
 # aqui configuro el sistema de logs de la aplicacion
 _logger = None
 
-
 def obtener_logger():
     global _logger
     if _logger is not None:
