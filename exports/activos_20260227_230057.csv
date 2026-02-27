@@ -1,0 +1,3 @@
+id,codigo,tipo,marca,modelo,numero_serie,ubicacion,fecha_alta,estado
+1,ACT-0001,Ordenador,Dell,Inspiron 15,SN123456,Aula 101,2024-01-15,Activo
+2,ACT-0002,Portatil,HP,ProBook,SN654321,Sala servidores,2024-03-10,Activo

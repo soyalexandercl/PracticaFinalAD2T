@@ -1,0 +1,7 @@
+{
+    "db_path": "datos/gestion_activos.db",
+    "registros_por_pagina": 15,
+    "nivel_log": "INFO",
+    "tema": "dark",
+    "color_principal": "blue"
+}
